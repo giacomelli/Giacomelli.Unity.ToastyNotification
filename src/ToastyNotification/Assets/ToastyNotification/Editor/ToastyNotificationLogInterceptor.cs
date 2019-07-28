@@ -8,7 +8,7 @@ using UnityEngine;
 /// https://github.com/giacomelli/Giacomelli.Unity.ToastyNotification
 /// </remarks>
 [InitializeOnLoad]
-public static class ToastyNotificationLogInterceptor 
+public static class ToastyNotificationLogInterceptor
 {
     static ToastyNotificationLogInterceptor()
     {
@@ -17,7 +17,7 @@ public static class ToastyNotificationLogInterceptor
 
     static void HandleLogMessageReceived(string condition, string stackTrace, LogType type)
     {
-        if(type == LogType.Error || type == LogType.Exception)
+        if (type == LogType.Error || type == LogType.Exception)
         {
             ToastyNotification.Notify();
         }

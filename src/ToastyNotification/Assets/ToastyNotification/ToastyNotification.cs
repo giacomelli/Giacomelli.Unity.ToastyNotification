@@ -15,7 +15,7 @@ public class ToastyNotification : MonoBehaviour
 
     AudioSource _audio;
     Image _image;
-   
+
     void Awake()
     {
         _audio = GetComponent<AudioSource>();
